@@ -218,12 +218,12 @@ h1 {
 /*=================================
   main styling starts here
 =================================*/
-.banner-section {
+/* .banner-section {
   width: 100%;
   height: auto;
   padding: 132px 0;
   background: url("../images/banner.jpg") no-repeat center center / cover;
-}
+} */
 
 #left-arrow {
   background: url("../images/sprite.png") no-repeat -132px -87px;
