@@ -111,12 +111,66 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header { background-color: #5C5D5F; }
 
+figure { 
+  width: 16px;
+  height: 16px;
+}
 
+#facebook {
+  background: url("../images/sprite.png") no-repeat 0 -42px;
+	width: 16px;
+	height: 16px;
+}
 
+#twitter {
+  background: url("../images/sprite.png") no-repeat -79px -42px;
+	width: 16px;
+	height: 16px;
+}
 
+#pinterest {
+  background: url("../images/sprite.png") no-repeat -40px -42px;
+	width: 17px;
+	height: 16px;
+}
 
+#insta {
+  background: url("../images/sprite.png") no-repeat -60px -42px;
+	width: 16px;
+	height: 16px;
+}
 
+#tumblr {
+  background: url("../images/sprite.png") no-repeat -79px -42px;
+	width: 16px;
+	height: 16px;
+}
+
+#youtube {
+  background: url("../images/sprite.png") no-repeat -98px -42px;
+	width: 17px;
+	height: 16px;
+}
+
+#share {
+  background: url("../images/sprite.png") no-repeat 0 -132px;
+	width: 20px;
+	height: 20px;
+}
+
+#search {
+  background: url("../images/sprite.png") no-repeat -44px -132px;
+	width: 21px;
+	height: 21px;
+}
+
+#hamburger {
+  background: url("../images/sprite.png") no-repeat -89px -132px;
+	width: 19px;
+	height: 17px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -124,7 +178,11 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-
+.banner-section {
+  width: 100%;
+  height: auto;
+  background: url("../images/banner.jpg") no-repeat center center / cover;
+}
 
 
 
