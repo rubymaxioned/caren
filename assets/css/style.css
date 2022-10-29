@@ -179,8 +179,20 @@ figure {
 	height: 20px;
 }
 
+#share:hover {
+  background: url("../images/sprite.png") no-repeat 0 -132px;
+	width: 20px;
+	height: 20px;
+}
+
 #search {
   background: url("../images/sprite.png") no-repeat -44px -87px;
+	width: 21px;
+	height: 21px;
+}
+
+#search:hover {
+  background: url("../images/sprite.png") no-repeat -44px -132px;
 	width: 21px;
 	height: 21px;
 }
@@ -189,6 +201,16 @@ figure {
   background: url("../images/sprite.png") no-repeat -89px -87px;
 	width: 19px;
 	height: 17px;
+}
+
+#hamburger:hover {
+  background: url("../images/sprite.png") no-repeat -89px -132px;
+	width: 19px;
+	height: 17px;
+}
+
+#hamburger:hover .menu ul {
+  opacity: 1;
 }
 
 .menu figure,
@@ -303,7 +325,7 @@ h1 {
 
 .gallery li:nth-of-type(4) { margin-bottom: 47%; }
 .gallery li:last-child,
-.hover { display: none; }
+.hover-div { display: none; }
 /*gallery section end*/
 
 
@@ -446,11 +468,11 @@ footer {
 
 .copyright { align-self: flex-end; }
 
-.gallery li .hover { display: block; }
-.gallery li .hover img { width: 15px; }
+.gallery li .hover-div { display: block; }
+.gallery li .hover-div img { width: 15px; }
 .gallery li { position: relative; }
 
-.gallery li .hover {
+.gallery li .hover-div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -458,12 +480,71 @@ footer {
   opacity: 0;
 }
 
-.gallery li:hover .hover { opacity: 1; }
+.gallery li:hover .hover-div {  opacity: 1; }
+.gallery li:hover { cursor: pointer; }
 
-.hover span {
+.gallery li:hover { 
+  -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+ }
+
+.hover-div span {
   text-transform: uppercase;
   color: #EE49AA;
   font-size: 16px;
   font-weight: 700;
 }
+
+.facebook:hover {
+  background: url("../images/sprite.png") no-repeat 0 -61px;
+	width: 16px;
+	height: 16px;
+}
+
+.twitter:hover {
+  background: url("../images/sprite.png") no-repeat -19px -61px;
+	width: 17px;
+	height: 16px;
+}
+
+.pinterest:hover {
+  background: url("../images/sprite.png") no-repeat -40px -61px;
+	width: 17px;
+	height: 16px;
+}
+
+.insta:hover {
+  background: url("../images/sprite.png") no-repeat -60px -61px;
+	width: 16px;
+	height: 16px;
+}
+
+.tumblr:hover {
+  background: url("../images/sprite.png") no-repeat -79px -61px;
+	width: 16px;
+	height: 16px;
+}
+
+.youtube:hover {
+  background: url("../images/sprite.png") no-repeat -98px -61px;
+	width: 17px;
+	height: 16px;
+}
+
+.banner-section .wrapper,
+.slider-images li,
+.slider-images li a { width: 100%; }
+
+.banner-section .wrapper { max-width: 2000px; }
+}
+
+/*media query for 1536px starts here*/
+@media only screen and (min-width: 1536px) {
+.container::before { height: 9px; }
+header { padding: 11px 0 30px; }
+header .wrapper { width: 72%; }
 }
