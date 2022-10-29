@@ -302,7 +302,8 @@ h1 {
 }
 
 .gallery li:nth-of-type(4) { margin-bottom: 47%; }
-.gallery li:last-child { display: none; }
+.gallery li:last-child,
+.hover { display: none; }
 /*gallery section end*/
 
 
@@ -444,4 +445,25 @@ footer {
 }
 
 .copyright { align-self: flex-end; }
+
+.gallery li .hover { display: block; }
+.gallery li .hover img { width: 15px; }
+.gallery li { position: relative; }
+
+.gallery li .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+.gallery li:hover .hover { opacity: 1; }
+
+.hover span {
+  text-transform: uppercase;
+  color: #EE49AA;
+  font-size: 16px;
+  font-weight: 700;
+}
 }
