@@ -386,7 +386,26 @@ nav .nav-menu {
   align-items: center;
 }
 
-nav .nav-menu li { 
-  padding-left: 10px;
+nav .nav-menu li {  padding: 0 10px; }
+.lang span:nth-of-type(1)::after { display: none; }
+
+.lang span:nth-of-type(1) {
+  padding-right: 7px;
+  border-right: 1px solid #A9A9A9;
+}
+
+.nav-links {
+  padding: 0 10px;
+  border-right: 2px solid #A9A9A9;
+  line-height: 14px;
+}
+
+.nav-links:last-child { 
+  padding-right: 0;
+  border-right: none;
  }
+
+.nav-links a { color: #E5E5E6; }
+
+.banner-section { margin-bottom: 20px; }
 }
