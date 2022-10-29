@@ -135,37 +135,37 @@ figure {
   height: 16px;
 }
 
-#facebook {
+.facebook {
   background: url("../images/sprite.png") no-repeat 0 -42px;
 	width: 16px;
 	height: 16px;
 }
 
-#twitter {
+.twitter {
   background: url("../images/sprite.png") no-repeat -79px -42px;
 	width: 16px;
 	height: 16px;
 }
 
-#pinterest {
+.pinterest {
   background: url("../images/sprite.png") no-repeat -40px -42px;
 	width: 17px;
 	height: 16px;
 }
 
-#insta {
+.insta {
   background: url("../images/sprite.png") no-repeat -60px -42px;
 	width: 16px;
 	height: 16px;
 }
 
-#tumblr {
+.tumblr {
   background: url("../images/sprite.png") no-repeat -79px -42px;
 	width: 16px;
 	height: 16px;
 }
 
-#youtube {
+.youtube {
   background: url("../images/sprite.png") no-repeat -98px -42px;
 	width: 17px;
 	height: 16px;
@@ -276,6 +276,27 @@ h1 {
   bottom: 78px;
 }
 
+
+/*gallery section*/
+
+.gallery-section .wrapper { width: 97%; }
+.gallery li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.gallery li:nth-of-type(1) { position: relative; }
+.gallery li:nth-of-type(1) img { width: 67%; }
+
+.gallery li:nth-of-type(1)::after {
+  content: '';
+  width: 32%;
+  height: 100%;
+  background-color: #666;
+  position: absolute;
+  right: -1px;
+}
+/*gallery section end*/
 
 
 
