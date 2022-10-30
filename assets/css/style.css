@@ -538,8 +538,8 @@ footer {
 .hover-div span {
   text-transform: uppercase;
   color: #EE49AA;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .facebook:hover {
@@ -642,4 +642,10 @@ header { padding: 16px 0 30px; }
  .dot-sec li a:hover { transform: scale(1.5); }
  .banner-section { margin-bottom: 23px; }
  .gallery-section .wrapper { width: 66%; }
+
+ .gallery li:nth-of-type(1),
+ .gallery .gray { flex-basis: 32.3%; }
+
+ .gallery li:nth-of-type(2) { flex-basis: 66.2%; }
+ .gallery li { margin-bottom: 15px; }
 }
