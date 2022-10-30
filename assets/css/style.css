@@ -67,6 +67,9 @@ sup {
 sup { top: -.7em; }
 sub { bottom: -.25em; }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body { font-family: 'Oswald', sans-serif; }
 /* 1.2. Clear Fix
    ========================== */
 
@@ -137,6 +140,18 @@ figure {
   height: 16px;
 }
 
+.home {
+  background: url("../images/sprite.png") no-repeat 0 0;
+	width: 16px;
+	height: 15px;
+}
+
+.home:hover {
+  background: url("../images/sprite.png") no-repeat 0 -17px;
+	width: 16px;
+	height: 15px;
+}
+
 .facebook {
   background: url("../images/sprite.png") no-repeat 0 -42px;
 	width: 16px;
@@ -144,8 +159,8 @@ figure {
 }
 
 .twitter {
-  background: url("../images/sprite.png") no-repeat -79px -42px;
-	width: 16px;
+  background: url("../images/sprite.png") no-repeat -19px -42px;
+	width: 17px;
 	height: 16px;
 }
 
@@ -249,6 +264,15 @@ h1 {
   margin: 0 2px;
   content: "\007C";
 }
+
+.nav-links a:hover { color: #E20493; }
+h1 a:hover { transform: scale(1.1); }
+.search-div img { padding-right: 5px; }
+
+.nav-links { 
+  font-size: 15px;
+  text-transform: uppercase;
+ }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -318,14 +342,33 @@ h1 {
   content: '';
   width: 32%;
   height: 100%;
-  background-color: #D8D8D8;
   position: absolute;
   right: -1px;
+  background-color: #D8D8D8;
 }
 
 .gallery li:nth-of-type(4) { margin-bottom: 47%; }
 .gallery li:last-child,
 .hover-div { display: none; }
+
+form {
+  display: flex;
+  align-items: center;
+  background: #6D6E72;
+  justify-content: center;
+}
+
+.search-div input {
+  width: 70px;
+  border: none;
+  background: #6D6E72;
+  outline: none;
+}
+
+.search-div input:focus {
+  padding-left: 5px;
+  color: #fff;
+}
 /*gallery section end*/
 
 
@@ -544,7 +587,33 @@ footer {
 
 /*media query for 1536px starts here*/
 @media only screen and (min-width: 1536px) {
-.container::before { height: 9px; }
+.container::before { height: 10px; }
 header { padding: 11px 0 30px; }
 header .wrapper { width: 72%; }
+
+.social-icons { 
+  margin-bottom: 15px;
+  gap: 7px;
+ }
+
+.social-icons span { font-size: 12px; }
+
+.social-icons ul {
+  display: flex;
+  gap: 5px
+}
+
+header { padding: 16px 0 30px; }
+.lang { padding-right: 17px; }
+.menu { padding-right: 5px; }
+
+.nav-menu li:nth-of-type(1) a,
+.nav-menu li:nth-of-type(2) a,
+.nav-menu li:nth-of-type(5) a { 
+  letter-spacing: -1px;
+ }
+
+ nav .nav-menu li {
+  padding: 0 8px;
+}
 }
