@@ -273,6 +273,8 @@ h1 a:hover { transform: scale(1.1); }
   font-size: 15px;
   text-transform: uppercase;
  }
+
+ form { display: none; }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -380,10 +382,10 @@ form {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer { background-color: #000; }
 footer  .wrapper{ 
   padding: 15px 0;
   margin-bottom: 4px;
-  background-color: #000; 
 }
 
 .copyright p { 
