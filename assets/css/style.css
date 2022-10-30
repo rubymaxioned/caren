@@ -380,7 +380,7 @@ form {
 /*=================================
   footer styling starts here
 =================================*/ 
-footer { 
+footer  .wrapper{ 
   padding: 15px 0;
   margin-bottom: 4px;
   background-color: #000; 
@@ -446,7 +446,8 @@ nav .nav-menu { display: block; }
   justify-content: flex-end;
 }
 
-nav .nav-menu { 
+nav .nav-menu,
+.footer-nav-menu { 
   display: flex;
   justify-content: end;
   align-items: center;
@@ -497,7 +498,7 @@ nav .nav-menu li {  padding: 0 10px; }
 .gallery li:nth-of-type(4) { margin-bottom: 0; }
 .footer-menu { display: block; }
 
-footer {
+footer .wrapper {
   display: flex;
   justify-content: space-around;
 }
@@ -609,10 +610,14 @@ header { padding: 16px 0 30px; }
 
 
 .nav-menu li:nth-of-type(5) a {  letter-spacing: -1px; }
+
  nav .nav-menu li { padding: 0 8px; }
+
  .search-div input { width: 67px; }
  .social-icons form  { padding-right: 8px; }
+
  .nav-menu li:nth-of-type(1) { padding-right: 15px; }
+
  h1 a img { height: 25px; }
  h1 { padding-left: 1px; }
 
@@ -648,7 +653,12 @@ header { padding: 16px 0 30px; }
 
  .gallery li:nth-of-type(2) { flex-basis: 66.2%; }
  .gallery li { margin-bottom: 15px; }
- footer { padding: 31px 0; }
+
+ footer .wrapper{ 
+  width: 94%;
+  padding: 31px 0 50px; 
+  max-width: 2000px;
+}
 
  .copyright p {
   font-size: 10px;
@@ -657,4 +667,11 @@ header { padding: 16px 0 30px; }
  }
 
  .footer-social-icons { margin-bottom: 23px; }
+
+ footer { 
+  background-color: #000;
+  font-family: 'Oswald', sans-serif;
+ }
+
+ 
 }
