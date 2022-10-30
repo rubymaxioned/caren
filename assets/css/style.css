@@ -648,4 +648,13 @@ header { padding: 16px 0 30px; }
 
  .gallery li:nth-of-type(2) { flex-basis: 66.2%; }
  .gallery li { margin-bottom: 15px; }
+ footer { padding: 31px 0; }
+
+ .copyright p {
+  font-size: 10px;
+  text-transform: capitalize;
+  color: #DBDBDD;
+ }
+
+ .footer-social-icons { margin-bottom: 23px; }
 }
