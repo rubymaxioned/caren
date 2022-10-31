@@ -191,11 +191,33 @@ header {
 #share:hover { background: url("../images/sprite.png") no-repeat 0 -132px; }
 #search:hover { background: url("../images/sprite.png") no-repeat -44px -132px; }
 #hamburger:hover { background: url("../images/sprite.png") no-repeat -89px -132px; }
-#hamburger:hover .menu ul { opacity: 1; }
+/* #hamburger:hover .menu ul { opacity: 1; } */
 
-.menu figure,
-.menu ul { display: none; }
+/* .menu figure,
+.menu ul { display: none; } */
 
+/* .mobile-nav ul li:nth-of-type(1),
+.mobile-nav ul li:nth-of-type(3) { position: relative; } */
+
+.share-options {
+  position: absolute;
+  display: flex;
+  left: 0px;
+  flex-direction: column;
+ }
+
+.mobile-nav-menu { position: absolute; }
+
+.mobile-nav > ul { 
+  display: flex;
+  gap: 5px;
+}
+
+/* .share-options { display: none; } */
+
+.mobile-nav ul li:nth-of-type(1):hover .share-options { display: block; }
+
+nav { display: none; }
 header .wrapper { display: flex; }
 
 h1 {
@@ -240,6 +262,7 @@ h1 a:hover { transform: scale(1.1); }
  }
 
  form { display: none; }
+ /* .mobile-nav { display: block; } */
 /*=================================
   Header styling ends here
 =================================*/  
