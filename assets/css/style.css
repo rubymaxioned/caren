@@ -157,8 +157,8 @@ header {
 }
 
 .home {
+  height: 15px;
   background: url("../images/sprite.png") no-repeat 0 0;
-	height: 15px;
 }
 
 .home:hover { background: url("../images/sprite.png") no-repeat 0 -17px; }
@@ -172,21 +172,21 @@ header {
 
 
 #share {
-  background: url("../images/sprite.png") no-repeat 0 -87px;
-	width: 20px;
+  width: 20px;
 	height: 20px;
+  background: url("../images/sprite.png") no-repeat 0 -87px;
 }
 
 #search {
-  background: url("../images/sprite.png") no-repeat -44px -87px;
-	width: 21px;
+  width: 21px;
 	height: 21px;
+  background: url("../images/sprite.png") no-repeat -44px -87px;
 }
 
 #hamburger {
-  background: url("../images/sprite.png") no-repeat -89px -87px;
-	width: 19px;
+  width: 19px;
 	height: 17px;
+  background: url("../images/sprite.png") no-repeat -89px -87px;
 }
 
 #share:hover { background: url("../images/sprite.png") no-repeat 0 -132px; }
@@ -219,15 +219,15 @@ header {
 .mobile-nav-menu li:nth-of-type(1) { display: none; }
 
 .mobile-nav-menu { 
+  width: 100%;
+  padding: 10px 0;
   position: absolute;
   top: 69px;
   left: 0px;
   display: flex ;
+  background: #000;
   flex-direction: column;
   text-transform: uppercase;
-  padding: 10px 0;
-  width: 100%;
-  background: #000;
   gap: 8px;
  }
 
@@ -285,9 +285,9 @@ h1 a:hover { transform: scale(1.1); }
 .nav-links { 
   font-size: 15px;
   text-transform: uppercase;
- }
+}
 
- form { display: none; }
+form { display: none; }
  /* .mobile-nav { display: block; } */
 /*=================================
   Header styling ends here
@@ -494,7 +494,7 @@ nav .nav-menu li {  padding: 0 10px; }
 .gallery li:last-child { 
   margin-bottom: 70px;
   flex-basis: 100%;
- }
+}
 
 .gallery li:nth-of-type(4) { margin-bottom: 0; }
 .footer-menu { display: block; }
@@ -567,7 +567,7 @@ header .wrapper { width: 72%; }
 .social-icons { 
   margin-bottom: 15px;
   gap: 7px;
- }
+}
 
 .social-icons span { font-size: 12px; }
 
