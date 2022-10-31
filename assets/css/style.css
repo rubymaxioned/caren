@@ -288,7 +288,8 @@ h1 a:hover { transform: scale(1.1); }
 }
 
 form { display: none; }
- /* .mobile-nav { display: block; } */
+.lang { display: inherit; }
+.gallery li:nth-of-type(1) { margin-top: -7px; }  
 /*=================================
   Header styling ends here
 =================================*/  
@@ -303,7 +304,7 @@ form { display: none; }
 .slider-images li:nth-of-type(4) { display: none; }
 
 .slider-images li img {
-  min-height: 230px;
+  min-height: 225px;
   object-fit: cover;
 }
 
@@ -338,18 +339,18 @@ form { display: none; }
 }
 
 /*gallery section*/
-.gallery-section .wrapper { width: 97%; }
+.gallery-section .wrapper { width: 96%; }
 
 .gallery li {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .gray { position: relative; }
-.gray img { width: 67%; }
+.gray img { width: 65%; }
 
 .gray::after {
-  width: 32%;
+  width: 33%;
   height: 100%;
   position: absolute;
   right: -1px;
