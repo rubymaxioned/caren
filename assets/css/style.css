@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -66,8 +69,6 @@ sup {
 
 sup { top: -.7em; }
 sub { bottom: -.25em; }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body { font-family: 'Oswald', sans-serif; }
 /* 1.2. Clear Fix
@@ -191,13 +192,7 @@ header {
 #share:hover { background: url("../images/sprite.png") no-repeat 0 -132px; }
 #search:hover { background: url("../images/sprite.png") no-repeat -44px -132px; }
 #hamburger:hover { background: url("../images/sprite.png") no-repeat -89px -132px; }
-/* #hamburger:hover .menu ul { opacity: 1; } */
-
-/* .menu figure,
-.menu ul { display: none; } */
-
-/* .mobile-nav ul li:nth-of-type(1),
-.mobile-nav ul li:nth-of-type(3) { position: relative; } */
+.social-icons ul { display: none; }
 
 .share-options {
   width: 100%;
@@ -229,7 +224,6 @@ header {
   left: 0px;
   display: flex ;
   flex-direction: column;
-  font-size: -5px;
   text-transform: uppercase;
   padding: 10px 0;
   width: 100%;
@@ -561,6 +555,7 @@ footer .wrapper {
 .slider-images li a { width: 100%; }
 
 .banner-section .wrapper { max-width: 2000px; }
+nav { display: block; }
 }
 
 /*media query for 1536px starts here*/
