@@ -636,11 +636,7 @@ footer .wrapper{
 }
 
 .footer-social-icons { margin-bottom: 23px; }
-
-footer { 
-  background-color: #000;
-  font-family: 'Oswald', sans-serif;
-}
+footer { background-color: #000; }
 
 .footer-nav-menu li:nth-of-type(6),
 .footer-nav-menu li:nth-of-type(5) { letter-spacing: -2px; }
