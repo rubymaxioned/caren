@@ -199,7 +199,7 @@ header {
   padding: 10px 0;
   display: flex;
   position: absolute;
-  top: 69px;
+  top: 55px;
   left: 0px;
   background: #000;
   flex-direction: column;
@@ -222,7 +222,7 @@ header {
   width: 100%;
   padding: 10px 0;
   position: absolute;
-  top: 69px;
+  top: 55px;
   left: 0px;
   display: flex ;
   background: #000;
